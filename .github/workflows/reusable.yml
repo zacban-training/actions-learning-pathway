@@ -8,8 +8,20 @@ on:
         description: "Node Version"
         required: true
         type: string
+      message:
+        description: "A message to echo"
+        required: false
+        type: string
 
 jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: check out repository
+        uses: actions/checkout@v3
+      - run: echo $(${{ inputs.message }})
+    
   build:
     runs-on: ubuntu-latest
 
