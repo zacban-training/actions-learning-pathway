@@ -3,6 +3,6 @@ on: push
 jobs:
   my-job:
   # Importing a reusable workflow from another repository and branch
-    uses: zacban-training/actions-learning-pathway/.github/workflows/reuseable.yml@main
+    uses: zacban-training/actions-learning-pathway/.github/workflows/reusable.yml@main
     with:
       node-version: '18.x'
