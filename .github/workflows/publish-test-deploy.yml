@@ -6,3 +6,4 @@ jobs:
     uses: zacban-training/actions-learning-pathway/.github/workflows/reusable.yml@main
     with:
       node-version: '18.x'
+      message: 'This is a parameter'
